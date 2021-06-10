@@ -1,0 +1,46 @@
+const $d30843a0db2f8bdb03c5a63fbee82dca$var$$siteList = $('.siteList');
+const $d30843a0db2f8bdb03c5a63fbee82dca$var$$lastLi = $d30843a0db2f8bdb03c5a63fbee82dca$var$$siteList.find('li.last');
+const $d30843a0db2f8bdb03c5a63fbee82dca$var$key = localStorage.getItem('key');
+const $d30843a0db2f8bdb03c5a63fbee82dca$var$keyObject = JSON.parse($d30843a0db2f8bdb03c5a63fbee82dca$var$key);
+const $d30843a0db2f8bdb03c5a63fbee82dca$var$hashMap = $d30843a0db2f8bdb03c5a63fbee82dca$var$keyObject || [
+    {
+        logo: 'A',
+        url: 'https://www.acfun.cn'
+    },
+    {
+        logo: 'B',
+        url: 'https://www.bilibili.com/'
+    }
+];
+const $d30843a0db2f8bdb03c5a63fbee82dca$var$simplifyUrl = (url)=>{
+    return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, '');
+};
+const $d30843a0db2f8bdb03c5a63fbee82dca$var$render = ()=>{
+    $d30843a0db2f8bdb03c5a63fbee82dca$var$$siteList.find('li:not(.last)').remove();
+    $d30843a0db2f8bdb03c5a63fbee82dca$var$hashMap.forEach((node, index)=>{
+        const $li = $(`<li>\n            <div class="site">\n                <div class="logo">${node.logo}</div>\n                <div class="link">${$d30843a0db2f8bdb03c5a63fbee82dca$var$simplifyUrl(node.url)}</div>\n                <div class="close">\n                    <svg class="icon">\n                        <use xlink:href="#icon-close"></use>\n                    </svg>\n                </div>\n            </div>        \n        </li>`).insertBefore($d30843a0db2f8bdb03c5a63fbee82dca$var$$lastLi);
+        $li.on('click', ()=>{
+            window.open(node.url);
+        });
+        $li.on('click', '.close', (e)=>{
+            e.stopPropagation();
+            $d30843a0db2f8bdb03c5a63fbee82dca$var$hashMap.splice(index, 1);
+            $d30843a0db2f8bdb03c5a63fbee82dca$var$render();
+        });
+    });
+};
+$d30843a0db2f8bdb03c5a63fbee82dca$var$render();
+$('.addButton').on('click', ()=>{
+    let url = window.prompt('请输入你要添加的网址');
+    if (url.indexOf('http') !== 0) url = 'https://' + url;
+    console.log(url);
+    $d30843a0db2f8bdb03c5a63fbee82dca$var$hashMap.push({
+        logo: $d30843a0db2f8bdb03c5a63fbee82dca$var$simplifyUrl(url)[0].toUpperCase(),
+        url: url
+    });
+    $d30843a0db2f8bdb03c5a63fbee82dca$var$render();
+});
+window.onbeforeunload = ()=>{
+    const string = JSON.stringify($d30843a0db2f8bdb03c5a63fbee82dca$var$hashMap);
+    localStorage.setItem('key', string);
+};

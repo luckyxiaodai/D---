@@ -1,0 +1,9 @@
+8
+23D:\Dai\nav-1\src\images132677879106291137 1
+25D:\Dai\nav-1\package.json132677886635696627 0
+26D:\Dai\nav-1\src\style.css132677890608337157 0
+16D:\Dai\nav-1\src132676973077776251 1
+36D:\Dai\nav-1\src\images\bilibili.png132676972411578665 0
+38D:\Dai\nav-1\src\images\background.png132677877252050022 0
+27D:\Dai\nav-1\src\index.html132677871294437544 0
+24D:\Dai\nav-1\src\main.js132677815435326174 0

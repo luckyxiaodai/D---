@@ -1,0 +1,18 @@
+$('.addButton')
+    .on('click', () => {
+        let url = window.prompt('请输入你要添加的网址')
+        if(url.indexOf('http')!==0){
+            url = 'https://' + url
+        }
+        console.log(url)
+        const $siteList = $('.siteList')
+        const $lastLi = $siteList.find('li.last')
+        const $site = $(`<li>
+            <a href="https://www.acfun.cn">
+                    <div class="site">
+                        <div class="logo">A</div>
+                        <div class="link">acfun.cn</div>
+                    </div>
+                </a>
+        </li>`)
+    })
