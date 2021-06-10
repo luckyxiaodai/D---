@@ -13,8 +13,19 @@ body{
     min-height: 100vh;
     overflow: hidden;
     background-image: url(background.cc769291.png);
-    background-size: 100% 100%;
+    background-size:cover;
     background-repeat: no-repeat;
+}
+@media (max-width:500px){
+    .body{
+        background-image:none!important;
+        background-image: url(background2.069079e7.png);
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .globalHeader { 
