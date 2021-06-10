@@ -1,0 +1,24 @@
+23
+23D:\Dai\nav-1\src\images132677989608652773 1
+17D:\Dai\nav-1\dist132678020477343906 1
+26D:\Dai\nav-1\src\style.css132678021730429899 0
+35D:\Dai\nav-1\dist\index.bd78eeec.js132678020477293838 0
+16D:\Dai\nav-1\src132677956776847522 1
+27D:\Dai\nav-1\src\.gitignore132677956776787681 0
+22D:\Dai\nav-1\yarn.lock132677956776857495 0
+38D:\Dai\nav-1\src\images\background.png132677956776817604 0
+27D:\Dai\nav-1\src\index.html132677956776837548 0
+24D:\Dai\nav-1\src\main.js132677956776847522 0
+39D:\Dai\nav-1\src\images\background2.png132677865875906497 0
+36D:\Dai\nav-1\src\images\bilibili.png132677956776827574 0
+41D:\Dai\nav-1\dist\background.224af6ab.png132677971680698773 0
+41D:\Dai\nav-1\dist\background.4840b167.png132678020477184116 0
+42D:\Dai\nav-1\dist\background2.54c7b3f6.png132678020245331534 0
+35D:\Dai\nav-1\dist\index.379a1ab7.js132677971680608917 0
+39D:\Dai\nav-1\dist\index.379a1ab7.js.map132677971680688712 0
+36D:\Dai\nav-1\dist\index.3f7f7965.css132678020477283865 0
+40D:\Dai\nav-1\dist\index.3f7f7965.css.map132678020477333722 0
+39D:\Dai\nav-1\dist\index.bd78eeec.js.map132678020477323760 0
+36D:\Dai\nav-1\dist\index.f163b353.css132677971680608917 0
+40D:\Dai\nav-1\dist\index.f163b353.css.map132677971680698773 0
+28D:\Dai\nav-1\dist\index.html132678020477283865 0

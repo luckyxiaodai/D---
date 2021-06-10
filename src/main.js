@@ -54,7 +54,6 @@ $('.addButton').on('click', () => {
 
     render()
 })
-
 window.onbeforeunload = () => {
    const string = JSON.stringify(hashMap)
    localStorage.setItem('key',string)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>D导航网站</title>
+    <style data-parcel-key="23d176644c2ea528cb0600147ec0be1b">.icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+</style>
+    <link rel="stylesheet" href="0142071c78f4afba601752483bc67be0">
+</head>
+
+<body>
+    <header class="globalHeader">
+        <form class="searchForm" method="get" action="https://www.baidu.com/s">
+            <input name="wd" type="text">
+            <button type="submit">搜索</button>
+        </form>
+    </header>
+    <main class="globalMain">
+        <ul class="siteList">
+            <li class="last">
+                <div class="addButton">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="#icon-add"></use>
+                        </svg>
+                    </div>
+                    <div class="text">新增网站</div>
+                </div> 
+            </li>
+        </ul>
+    </main>
+    <script src="4995633ce4066b00345923264da8b4f2"></script>
+    <script src="a541621cd063232e8b9471fa46114170"></script>
+    <script src="e5eac8ffcd5b54e0f37c2025c685ef97"></script>
+</body>
+
+</html>
